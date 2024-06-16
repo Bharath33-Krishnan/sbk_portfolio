@@ -3,7 +3,7 @@
 # Contents
 - ### [About](#About)
 - ### [Games](#Games)
-- ### [Shaders and Shader Art](#Shaders)
+- ### [Graphics and Shader Art](#Shaders)
 - ### [Other Projects](#Others)
 
 <a id = "About"></a>
@@ -55,8 +55,14 @@ The main highlights of the game are:
 - Extensible weapon system
 - Hand made UI and art
 
+## 4. [Wing It](https://bharathk33.itch.io/wingit)
+
+<img src=https://github.com/Bharath33-Krishnan/sbk_portfolio/assets/76857335/4e5bf6bd-dac6-43bf-8028-dc973d3e5f6a) width="500"/>
+
+A flappy bird inspired game, made in SDL2. This was my first game in a framework like SDL. 
+
 <a id = "Shaders"></a>
-# Shaders and Shader Art
+# Graphics and Shader Art
 
 <a id = "Others"></a>
 # Other Projects
