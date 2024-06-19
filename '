@@ -1,10 +1,10 @@
 # Bharath Krishnan's Portfolio
 
 # Contents
-- [About](#About)
-- [Games](#Games)
-- [Graphics and Shader Art](#Shaders)
-- [Other Projects](#Others)
+- ### [About](#About)
+- ### [Games](#Games)
+- ### [Graphics and Shader Art](#Shaders)
+- ### [Other Projects](#Others)
 
 <a id = "About"></a>
 # About
@@ -13,7 +13,10 @@
 # Games
 ## 1. [Funky Blueprints](https://bharathk33.itch.io/funkyblueprints)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QuP8OgCKnaM?si=NvZ_nb2nvLji_Woe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+https://github.com/Bharath33-Krishnan/sbk_portfolio/assets/76857335/ffc65487-507d-4fc8-99e4-1d65d7d2e2de
+
+
 
 A physics based puzzle game, where you draw different contraptions to carry the heart to its destination. It was made in Godot in a week. It was my first time using Godot, but the engine's similarity to unity enabled my team to finish it in time.
 
@@ -28,7 +31,7 @@ Markup : <details>
          </details>
 ## 2. [Disarm It](https://bharathk33.itch.io/disarm-it)
 
-<img src="Assets/DisarmIt.jpg" width=500/>
+<img src="" width=500/>
 
 
 A time attack game, made in Unity.My first step into procedural generation.The goal of the game is to survive the timer, but you should not stop your car, you also need to follow the randomly generated rules, else your car will blow up.
@@ -42,7 +45,8 @@ The main highlights of the game are:
 
 ## 3. [Duel](https://bharathk33.itch.io/duel)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j0TNKrEShGs?si=Im-BnvTPTLh3x6dQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://github.com/Bharath33-Krishnan/sbk_portfolio/assets/76857335/0593013c-ce2a-4a56-9de2-2cdf6401269c
+
 A strategy based tower defense like game, made in Unity. This was my first game with multiple full fledged mechanics with an extensible design using object oriented design principles.
 
 The main highlights of the game are:
@@ -53,25 +57,14 @@ The main highlights of the game are:
 
 ## 4. [Wing It](https://bharathk33.itch.io/wingit)
 
-<img src="Assets/WingIt.jpg" width="500"/>
+<img src=https://github.com/Bharath33-Krishnan/sbk_portfolio/assets/76857335/4e5bf6bd-dac6-43bf-8028-dc973d3e5f6a) width="500"/>
 
 A flappy bird inspired game, made in SDL2. This was my first game in a framework like SDL. 
 
 <a id = "Shaders"></a>
 # Graphics and Shader Art
-## 1. [Music Visualisation Using Procedural Planet Generation](https://github.com/Bharath33-Krishnan/Procedural-music-Visualisation)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DWNN5HCaRFQ?si=c6swSfw587TVRz7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Mixing Music Visualisation with Sebastien Lague's procedural planet generation. Made in unity
-
-Highlights:
-- Custom Inspectors
-- Unity Fragment Shader
-
-## 2. Music Visualisation Fragment Shader
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/clGBWR?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
-
-uses Polar Coordinates to create stunning music visualisation
 
 <a id = "Others"></a>
 # Other Projects
