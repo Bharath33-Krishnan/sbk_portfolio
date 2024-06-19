@@ -28,7 +28,7 @@ Markup : <details>
          </details>
 ## 2. [Disarm It](https://bharathk33.itch.io/disarm-it)
 
-<img src="Assets/DisarmIt.jpg" width=500/>
+<img src="assets/DisarmIt.jpg" width=500/>
 
 
 A time attack game, made in Unity.My first step into procedural generation.The goal of the game is to survive the timer, but you should not stop your car, you also need to follow the randomly generated rules, else your car will blow up.
@@ -53,7 +53,7 @@ The main highlights of the game are:
 
 ## 4. [Wing It](https://bharathk33.itch.io/wingit)
 
-<img src="Assets/WingIt.jpg" width="500"/>
+<img src="assets/WingIt.jpg" width="500"/>
 
 A flappy bird inspired game, made in SDL2. This was my first game in a framework like SDL. 
 
