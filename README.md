@@ -8,7 +8,9 @@
 
 <a id = "About"></a>
 # About
+I am a passionate game developer with over seven years of experience, specializing in Unity Game Engine. I have keen interest in shader art and procedural generation algorithms. Currently, I’m working as a Unity Developer Intern at Fabwelt Studios, where I focus on gameplay programming to bring engaging and innovative game mechanics to life.
 
+In addition to game development, I’m passionate about various creative outlets. I enjoy playing video games, watching anime, reading, and sketching in my spare time, all of which fuel my creativity and inspire my work.
 
 <a id = "Games"></a>
 # Games
@@ -98,5 +100,17 @@ Custom Vine Generation Shader, made in Unity Shader Graph using simple trignomet
 An RPG, office simulator where your choices can change the outcome of the game.
 - Game input from face emotion detection using deep learning
 - Worked mostly on Game Backend, Frontend-Backend integration
+
+## 2. [Frag-Engine](https://github.com/Bharath33-Krishnan/Frag-Engine)
+2D game engine built arround raylib. This engine was made to improve raylib's support for game development and also to integrate other third party libraries with raylib easily. 
+
+#### Features
+- Easy to Use
+- Highly Flexible code based design with minimal GUI
+- Purely cpp oriented, oop based design
+- In-built sprite animation support
+- Rendering Engine supporting layers
+- Supports Collission detection and Resolution
+- In-Built particle system
 
 
