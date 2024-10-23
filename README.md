@@ -9,6 +9,7 @@
 <a id = "About"></a>
 # About
 
+
 <a id = "Games"></a>
 # Games
 ## 1. [Funky Blueprints](https://bharathk33.itch.io/funkyblueprints)
@@ -47,7 +48,7 @@ A strategy based tower defense like game, made in Unity. This was my first game 
 
 The main highlights of the game are:
 - Extensive use of co-routines for dialogue system and bgm mixing.
-- Automatic level creation, based on oede of gameobjects in hierarchy
+- Automatic level creation, based on order of gameobjects in hierarchy
 - Extensible weapon system
 - Hand made UI and art
 
@@ -56,11 +57,24 @@ The main highlights of the game are:
 <img src="assets/WingIt.jpg" width="500"/>
 
 A flappy bird inspired game, made in SDL2. This was my first game in a framework like SDL. 
+- Made in SDL2 in 5 days 
+- Custom implemenation of AABB collision detection
+- Engine Abstraction over SDL
+
+## 5. [Dungeon Man](https://bharathk33.itch.io/radar-game)
+
+<img src="assets/DungeonMan.png" width="500"/>
+
+A top down dungeon crawler, made in Unity. Try using your trusty radar, to try and avoid getting caught by the Ghosts.
+- Made in 2 days for IGDCxWTF game jam
+- Custom Character AI logic
+- Shader Based Radar System
 
 <a id = "Shaders"></a>
 # Graphics and Shader Art
 ## 1. [Music Visualisation Using Procedural Planet Generation](https://github.com/Bharath33-Krishnan/Procedural-music-Visualisation)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DWNN5HCaRFQ?si=c6swSfw587TVRz7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Mixing Music Visualisation with Sebastien Lague's procedural planet generation. Made in unity
 
@@ -73,7 +87,16 @@ Highlights:
 
 uses Polar Coordinates to create stunning music visualisation
 
+## 3. Custom Vine Generation Shder
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DRBvbl4j-4E?si=F-tTYO5K_NpsxHfK&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Custom Vine Generation Shader, made in Unity Shader Graph using simple trignometry.
+
 <a id = "Others"></a>
 # Other Projects
+## 1. [Verma's Karma](https://github.com/Ankur7891/VermasKarma)
+An RPG, office simulator where your choices can change the outcome of the game.
+- Game input from face emotion detection using deep learning
+- Worked mostly on Game Backend, Frontend-Backend integration
 
 
