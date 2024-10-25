@@ -85,7 +85,7 @@ Highlights:
 - Unity Fragment Shader
 
 ## 2. Music Visualisation Fragment Shader
-<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/clGBWR?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/clGBWR?gui=true&t=0&paused=true&muted=false" allowfullscreen></iframe>
 
 uses Polar Coordinates to create stunning music visualisation
 
