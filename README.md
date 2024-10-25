@@ -87,6 +87,7 @@ Highlights:
 ## 2. Music Visualisation Fragment Shader
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/clGBWR?gui=true&t=0&paused=true&muted=false" allowfullscreen></iframe>
 
+#### Note: Please Reset (use ⏯️ button) The Shader First, for It to work properly. Due to shadertoy embed limitations. 
 uses Polar Coordinates to create stunning music visualisation
 
 ## 3. Custom Vine Generation Shder
