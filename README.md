@@ -102,7 +102,7 @@ An RPG, office simulator where your choices can change the outcome of the game.
 - Game input from face emotion detection using deep learning
 - Worked mostly on Game Backend, Frontend-Backend integration
 
-## 2. [Frag-Engine](https://github.com/Bharath33-Krishnan/Frag-Engine)
+## 2. [Frag-Engine](https://github.com/Fragments-GDU-IIITK/Frag-Engine)
 2D game engine built arround raylib. This engine was made to improve raylib's support for game development and also to integrate other third party libraries with raylib easily. 
 
 #### Features
