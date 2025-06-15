@@ -1,0 +1,10 @@
+.section__title{
+  margin-top: 30px;
+}
+.projects__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}

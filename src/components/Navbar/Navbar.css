@@ -1,0 +1,70 @@
+.nav__list {
+  margin-right: 1.5em;
+  display: flex;
+}
+.nav__list-item {
+  margin-left: 1.5em;
+}
+
+.app .nav__hamburger {
+  display: none;
+}
+
+.nav__theme {
+  margin-top: 0.4em;
+}
+
+@media (max-width: 600px) {
+    .nav__list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%; /* or 80% if you prefer */
+    max-width: 300px;
+    background-color: var(--clr-bg); /* ensure this is defined for dark/light themes */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 2em 1.5em;
+    transform: translateX(200%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+  .nav__list--active {
+    transform: translateX(10%);
+  }
+
+  .nav__list-item {
+    margin: 1em 0;
+  }
+
+  .nav__hamburger {
+    display: flex;
+    z-index: 3;
+    margin-left: 0.8em;
+  }
+/*   .nav__list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .nav__list-item {
+    margin: 0.5em 0;
+  }
+  */
+  .app .nav__hamburger {
+    display: flex;
+    z-index: 2;
+    margin-left: 0.8em;
+  }
+}
