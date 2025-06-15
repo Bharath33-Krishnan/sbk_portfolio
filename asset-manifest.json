@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/sbk_portfolio/static/css/main.09784dd2.chunk.css",
+    "main.js": "/sbk_portfolio/static/js/main.14180c12.chunk.js",
+    "main.js.map": "/sbk_portfolio/static/js/main.14180c12.chunk.js.map",
+    "runtime-main.js": "/sbk_portfolio/static/js/runtime-main.2a64c5ea.js",
+    "runtime-main.js.map": "/sbk_portfolio/static/js/runtime-main.2a64c5ea.js.map",
+    "static/js/2.cac626e9.chunk.js": "/sbk_portfolio/static/js/2.cac626e9.chunk.js",
+    "static/js/2.cac626e9.chunk.js.map": "/sbk_portfolio/static/js/2.cac626e9.chunk.js.map",
+    "index.html": "/sbk_portfolio/index.html",
+    "static/css/main.09784dd2.chunk.css.map": "/sbk_portfolio/static/css/main.09784dd2.chunk.css.map",
+    "static/js/2.cac626e9.chunk.js.LICENSE.txt": "/sbk_portfolio/static/js/2.cac626e9.chunk.js.LICENSE.txt",
+    "static/media/DisarmIt.2e187eb7.jpg": "/sbk_portfolio/static/media/DisarmIt.2e187eb7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a64c5ea.js",
+    "static/js/2.cac626e9.chunk.js",
+    "static/css/main.09784dd2.chunk.css",
+    "static/js/main.14180c12.chunk.js"
+  ]
+}
