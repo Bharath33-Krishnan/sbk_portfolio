@@ -6,7 +6,7 @@ const Footer = () => (
       href='https://github.com/rjshkhr/cleanfolio'
       className='link footer__link'
     >
-      Created By Raj Shekhar
+      Modified By S. Bharath Krishnan, Original Template By Raj Shekhar
     </a>
   </footer>
 )
