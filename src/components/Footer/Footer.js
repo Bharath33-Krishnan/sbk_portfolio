@@ -3,7 +3,7 @@ import './Footer.css'
 const Footer = () => (
   <footer className='footer'>
     <a
-      href='https://github.com/rjshkhr/cleanfolio'
+      href='https://github.com/Bharath33-Krishnan/sbk_portfolio"
       className='link footer__link'
     >
       <p className='footer-copy'>
