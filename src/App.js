@@ -19,8 +19,8 @@ const App = () => {
 
       <main>
         <About />
-        <Projects id="games" projects={games} name='Video Games' />
-        <Projects id="projects" projects={projects} name='Projects' />
+        <Projects id='games' projects={games} name='Video Games' />
+        <Projects id='projects' projects={projects} name='Projects' />
         <Skills />
         <Contact />
       </main>

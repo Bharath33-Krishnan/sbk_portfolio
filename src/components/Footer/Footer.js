@@ -6,7 +6,10 @@ const Footer = () => (
       href='https://github.com/rjshkhr/cleanfolio'
       className='link footer__link'
     >
-      Modified By S. Bharath Krishnan, Original Template By Raj Shekhar
+      <p className='footer-copy'>
+        © 2025 <span className='footer-author'>S. Bharath Krishnan</span>. All
+        rights reserved.
+      </p>
     </a>
   </footer>
 )

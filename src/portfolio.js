@@ -254,7 +254,7 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Procedural Shaders',
     CarouselContent:[
       { type: 'iframe', src: 'https://www.youtube.com/embed/DRBvbl4j-4E?si=F-tTYO5K_NpsxHfK&amp;start=10', title: 'Vine Shader' },
       { type: 'iframe', src: 'https://www.shadertoy.com/embed/lXK3D3?gui=true&t=10&paused=true&muted=false', title: 'Scales Of Randomness' },
@@ -278,21 +278,39 @@ const projects = [
     stack: ['ShaderGraph', 'GLSL', 'Shadertoy', 'Unity'],
   },
   {
-    name: 'Project 2',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    name: 'Procedural Music Visualization',
+    CarouselContent:[
+      { type: 'iframe', src: 'https://www.youtube.com/embed/DWNN5HCaRFQ?si=b7Wgazi2fGsYc1sv', title: 'Planet Music Visualizer' },
+      { type: 'iframe', src: 'https://www.shadertoy.com/embed/clGBWR?gui=true&paused=true&muted=false', title: 'Scales Of Randomness' },
+    ],
+    description:(      
+    <div className='portfolio-entry' style={{ textAlign: 'left' }}>
+        <p>
+          Combining my love for audio and real-time rendering, I’ve explored <strong>music visualization</strong> through both <strong>Unity</strong> and <strong>Shadertoy</strong>. These projects allowed me to blend rhythm, motion, and graphics into expressive, reactive visuals.
+        </p>
+        <p>
+          From audio-reactive planets to frequency-driven distortions, each project was a deep dive into how sound can shape visuals. Here’s a glimpse into two of my favorite experiments:
+        </p>
+        <ul className='portfolio-list'>
+          <li>
+            <strong>Unity Music Visualizer</strong> – Inspired by Sebastien Lague’s procedural terrain generation. This project uses mesh deformation techniques driven by live audio spectra to animate an otherworldly terrain reacting in real-time.
+          </li>
+          <li>
+            <strong>(Shadertoy) Music Visualizer</strong> – A minimal shader experiment where polar UV transformations create a pulsing pattern synchronized with beats.
+          </li>
+        </ul>
+    </div>
+    ),
+    stack: ['ShaderGraph', 'GLSL', 'Shadertoy', 'Unity'],
   },
-  {
-    name: 'Project 3',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-  },
+  // {
+  //   name: 'Project 3',
+  //   description:
+  //     'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+  //   stack: ['SASS', 'TypeScript', 'React'],
+  //   sourceCode: 'https://github.com',
+  //   livePreview: 'https://github.com',
+  // },
 ]
 
 const skills = [

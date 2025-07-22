@@ -10,9 +10,23 @@
   color: var(--clr-fg);
 }
 
+.footer-copy {
+  font-weight: 500; /* medium weight */
+  text-align: center;
+  font-size: 0.875rem; /* roughly equivalent to text-sm */
+  margin-top: 2rem;
+  color: var(--clr-fg);
+}
+
+.footer-author {
+  font-weight: 1000; /* medium weight */
+  color: var(--clr-fg); /* slightly darker for emphasis */
+}
+
 @media (max-width: 600px) {
   .footer {
     padding: 2em;
     margin-top: 3em;
   }
 }
+
