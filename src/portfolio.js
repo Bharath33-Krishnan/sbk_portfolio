@@ -1,5 +1,8 @@
 import DisarmItImg from './assets/DisarmIt.jpg'
 import DungeonManImg from './assets/DungeonMan.png'
+import RaylibEngineImg1 from './assets/FragEngine.png'
+import RaylibEngineImg2 from './assets/FragEngineLighting.png'
+import FabrikGif from './assets/FABRIK.gif'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -254,24 +257,178 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Procedural Shaders',
-    CarouselContent:[
-      { type: 'iframe', src: 'https://www.youtube.com/embed/DRBvbl4j-4E?si=F-tTYO5K_NpsxHfK&amp;start=10', title: 'Vine Shader' },
-      { type: 'iframe', src: 'https://www.shadertoy.com/embed/lXK3D3?gui=true&t=10&paused=true&muted=false', title: 'Scales Of Randomness' },
-      { type: 'iframe', src: 'https://www.shadertoy.com/embed/t32SDW?gui=true&t=10&paused=true&muted=false', title: 'Shooting Stars' },
+    name: 'IK Solver Library(2024)',
+    content: (
+      <div className='iframe-container'>
+        <iframe
+          max-height='1200px'
+          height='100%'
+          src={FabrikGif}
+          title='IK Solver Gif'
+          frameBorder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerpolicy='strict-origin-when-cross-origin'
+          allowFullScreen
+        />
+      </div>
+    ),
+    description: (
+      <>
+        <div className='portfolio-entry' style={{ textAlign: 'left' }}>
+          <p>
+            <strong>Inverse Kinematics Solver Library</strong> is a flexible and
+            extensible C++ library for solving inverse kinematics problems in
+            both 2D and 3D spaces. Built with future scalability in mind, the
+            library was designed to support multiple algorithms with the ability
+            to easily swap between them. The initial implementation uses the{' '}
+            <strong>FABRIK algorithm</strong>, providing fast and accurate
+            solutions for kinematic chains.
+          </p>
+          <p>
+            I focused on designing a{' '}
+            <strong>fully object-oriented architecture</strong> with extensive
+            use of <strong>templates</strong> to support different segment
+            types, including <strong>glm::vec2</strong>,{' '}
+            <strong>glm::vec3</strong>, <strong>glm::ivec2</strong>, and{' '}
+            <strong>glm::ivec3</strong>. The result is a clean, reusable, and
+            type-agnostic system that&apos;s both easy to integrate and efficient in
+            computation.
+          </p>
+          <ul className='portfolio-list'>
+            <li>
+              <strong>Algorithm-Swappable Architecture</strong> – abstract base
+              interfaces and modular design allow new IK algorithms to be
+              integrated with minimal changes
+            </li>
+            <li>
+              <strong>FABRIK Solver</strong> – robust implementation of Forward
+              And Backward Reaching Inverse Kinematics for fast convergence and
+              chain stability
+            </li>
+            <li>
+              <strong>GLM Compatibility</strong> – supports multiple glm types
+              via advanced C++ template programming, enabling seamless use in
+              OpenGL and game projects
+            </li>
+            <li>
+              <strong>OOP Design</strong> – clean object-oriented structure
+              ensures maintainability and future extensibility
+            </li>
+          </ul>
+        </div>
+      </>
+    ),
+    stack: ['C++', 'glm', 'raylib'],
+  },
+  {
+    name: '2D Game Engine Wrapper Arround Raylib (2024)',
+    CarouselContent: [
+      {
+        type: 'image',
+        src: RaylibEngineImg1,
+        title: 'Raylib Engine',
+      },
+      {
+        type: 'image',
+        src: RaylibEngineImg2,
+        title: 'Raylib Engine',
+      },
     ],
     description: (
       <div className='portfolio-entry' style={{ textAlign: 'left' }}>
         <p>
-          As a natural extension of my passion for game development, I’ve developed a deep love for <strong>shader art</strong> and <strong>procedural visuals</strong>. Whether experimenting with <strong>UV distortion, fract functions</strong> in Shadertoy, or building visual pipelines in <strong>Unity’s Shader Graph</strong>, each creation has offered new insights into the beauty of real-time rendering.
+          As part of a collaborative project, I co-developed a lightweight 2D
+          game engine wrapper around <strong>Raylib</strong>, aimed at enhancing
+          Raylib’s capabilities with modular features and better support for
+          third-party integrations. While the engine is 2D-focused, it was
+          initially envisioned as a 3D engine—resulting in a more advanced
+          lighting system alongside traditional 2D systems.
         </p>
         <p>
-          From algorithmically generated vines to accidental artifacts of randomness, every shader has been both a learning experience and a creative outlet. Here&apos;s a glimpse into some of my favorite works:
+          My primary contributions centered around the{' '}
+          <strong>lighting system, collision engine</strong>, and{' '}
+          <strong>particle system</strong>, all designed from scratch for
+          flexibility and real-time performance.
         </p>
         <ul className='portfolio-list'>
-          <li><strong>Procedural Vine Shader</strong> – Built in Unity Shader Graph, simulates growth behavior along arbitrary paths.</li>
-          <li><strong>Scales of Randomness</strong> – A surprising pattern that emerged from UV manipulations and fract logic, posted on Shadertoy.</li>
-          <li><strong>Shooting Stars</strong> – A mesmerizing particle flow representing stars in a perpetual fall, one of my most polished Shadertoy pieces.</li>
+          <li>
+            <strong>Lighting System</strong> – Developed a full{' '}
+            <em>3D Phong Lighting Model</em> with{' '}
+            <strong>normal mapping</strong> support. This was a carryover from
+            our initial 3D vision and brought enhanced visual depth to the 2D
+            pipeline.
+          </li>
+          <li>
+            <strong>Collision Detection & Resolution</strong> – Created a robust
+            2D collision system that handles both dynamic and static
+            interactions, with support for layer-based rendering.
+          </li>
+          <li>
+            <strong>Particle System</strong> – Engineered a simple particle
+            system
+          </li>
+        </ul>
+        <p>
+          The engine follows an <strong>OOP-driven</strong>,{' '}
+          <strong>pure C++</strong> architecture, providing a code-first
+          workflow with minimal GUI. It includes sprite animation support,
+          layered rendering, and cross-platform build scripts for Windows and
+          Linux.
+        </p>
+      </div>
+    ),
+    stack: ['C++', 'Raylib', 'Cmake'],
+    sourceCode: 'https://github.com/Fragments-GDU-IIITK/Frag-Engine/',
+  },
+  {
+    name: 'Procedural Shaders',
+    CarouselContent: [
+      {
+        type: 'iframe',
+        src: 'https://www.youtube.com/embed/DRBvbl4j-4E?si=F-tTYO5K_NpsxHfK&amp;start=10',
+        title: 'Vine Shader',
+      },
+      {
+        type: 'iframe',
+        src: 'https://www.shadertoy.com/embed/lXK3D3?gui=true&t=10&paused=true&muted=false',
+        title: 'Scales Of Randomness',
+      },
+      {
+        type: 'iframe',
+        src: 'https://www.shadertoy.com/embed/t32SDW?gui=true&t=10&paused=true&muted=false',
+        title: 'Shooting Stars',
+      },
+    ],
+    description: (
+      <div className='portfolio-entry' style={{ textAlign: 'left' }}>
+        <p>
+          As a natural extension of my passion for game development, I’ve
+          developed a deep love for <strong>shader art</strong> and{' '}
+          <strong>procedural visuals</strong>. Whether experimenting with{' '}
+          <strong>UV distortion, fract functions</strong> in Shadertoy, or
+          building visual pipelines in <strong>Unity’s Shader Graph</strong>,
+          each creation has offered new insights into the beauty of real-time
+          rendering.
+        </p>
+        <p>
+          From algorithmically generated vines to accidental artifacts of
+          randomness, every shader has been both a learning experience and a
+          creative outlet. Here&apos;s a glimpse into some of my favorite works:
+        </p>
+        <ul className='portfolio-list'>
+          <li>
+            <strong>Procedural Vine Shader</strong> – Built in Unity Shader
+            Graph, simulates growth behavior along arbitrary paths.
+          </li>
+          <li>
+            <strong>Scales of Randomness</strong> – A surprising pattern that
+            emerged from UV manipulations and fract logic, posted on Shadertoy.
+          </li>
+          <li>
+            <strong>Shooting Stars</strong> – A mesmerizing particle flow
+            representing stars in a perpetual fall, one of my most polished
+            Shadertoy pieces.
+          </li>
         </ul>
       </div>
     ),
@@ -279,27 +436,46 @@ const projects = [
   },
   {
     name: 'Procedural Music Visualization',
-    CarouselContent:[
-      { type: 'iframe', src: 'https://www.youtube.com/embed/DWNN5HCaRFQ?si=b7Wgazi2fGsYc1sv', title: 'Planet Music Visualizer' },
-      { type: 'iframe', src: 'https://www.shadertoy.com/embed/clGBWR?gui=true&paused=true&muted=false', title: 'Scales Of Randomness' },
+    CarouselContent: [
+      {
+        type: 'iframe',
+        src: 'https://www.youtube.com/embed/DWNN5HCaRFQ?si=b7Wgazi2fGsYc1sv',
+        title: 'Planet Music Visualizer',
+      },
+      {
+        type: 'iframe',
+        src: 'https://www.shadertoy.com/embed/clGBWR?gui=true&paused=true&muted=false',
+        title: 'Scales Of Randomness',
+      },
     ],
-    description:(      
-    <div className='portfolio-entry' style={{ textAlign: 'left' }}>
+    description: (
+      <div className='portfolio-entry' style={{ textAlign: 'left' }}>
         <p>
-          Combining my love for audio and real-time rendering, I’ve explored <strong>music visualization</strong> through both <strong>Unity</strong> and <strong>Shadertoy</strong>. These projects allowed me to blend rhythm, motion, and graphics into expressive, reactive visuals.
+          Combining my love for audio and real-time rendering, I’ve explored{' '}
+          <strong>music visualization</strong> through both{' '}
+          <strong>Unity</strong> and <strong>Shadertoy</strong>. These projects
+          allowed me to blend rhythm, motion, and graphics into expressive,
+          reactive visuals.
         </p>
         <p>
-          From audio-reactive planets to frequency-driven distortions, each project was a deep dive into how sound can shape visuals. Here’s a glimpse into two of my favorite experiments:
+          From audio-reactive planets to frequency-driven distortions, each
+          project was a deep dive into how sound can shape visuals. Here’s a
+          glimpse into two of my favorite experiments:
         </p>
         <ul className='portfolio-list'>
           <li>
-            <strong>Unity Music Visualizer</strong> – Inspired by Sebastien Lague’s procedural terrain generation. This project uses mesh deformation techniques driven by live audio spectra to animate an otherworldly terrain reacting in real-time.
+            <strong>Unity Music Visualizer</strong> – Inspired by Sebastien
+            Lague’s procedural terrain generation. This project uses mesh
+            deformation techniques driven by live audio spectra to animate an
+            otherworldly terrain reacting in real-time.
           </li>
           <li>
-            <strong>(Shadertoy) Music Visualizer</strong> – A minimal shader experiment where polar UV transformations create a pulsing pattern synchronized with beats.
+            <strong>(Shadertoy) Music Visualizer</strong> – A minimal shader
+            experiment where polar UV transformations create a pulsing pattern
+            synchronized with beats.
           </li>
         </ul>
-    </div>
+      </div>
     ),
     stack: ['ShaderGraph', 'GLSL', 'Shadertoy', 'Unity'],
   },
