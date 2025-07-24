@@ -187,7 +187,7 @@ const games = [
       </>
     ),
     stack: ['Unity', 'C#'],
-    livePreview: 'https://bharathk33.itch.io/disarmit',
+    livePreview: 'https://bharathk33.itch.io/disarm-it',
   },
   {
     name: 'Duel (2022)',
@@ -319,6 +319,7 @@ const projects = [
       </>
     ),
     stack: ['C++', 'glm', 'raylib'],
+    sourceCode: 'https://github.com/Bharath33-Krishnan/InverseKinematics',
   },
   {
     name: '2D Game Engine Wrapper Arround Raylib (2024)',
