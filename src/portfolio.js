@@ -1,8 +1,8 @@
-import DisarmItImg from './assets/DisarmIt.jpg'
-import DungeonManImg from './assets/DungeonMan.png'
 import RaylibEngineImg1 from './assets/FragEngine.png'
 import RaylibEngineImg2 from './assets/FragEngineLighting.png'
-import FabrikGif from './assets/FABRIK.gif'
+import DIT_R1 from './assets/DIT_R1.png'
+import DIT_R2 from './assets/DIT_R2.png'
+import DIT_R3 from './assets/DIT_R3.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -30,16 +30,105 @@ const about = {
 
 const games = [
   {
+    name: 'Disarm-It Remake (2025) : Work In Progress',
+    CarouselContent: [
+      {
+        type: 'iframe',
+        src: 'https://www.youtube.com/embed/AaRRa4W-eqA?si=acMIIXZUv34KmyFF',
+        title: 'Vine Shader',
+      },
+      {
+        type: 'image',
+        src: DIT_R1,
+        title: 'Screenshot 1',
+      },
+      {
+        type: 'image',
+        src: DIT_R2,
+        title: 'Screenshot 2',
+      },
+      {
+        type: 'image',
+        src: DIT_R3,
+        title: 'Screenshot 3',
+      },
+    ],
+    description: (
+      <>
+        <div className='portfolio-entry' style={{ textAlign: 'left' }}>
+          <p>
+            <strong>Disarm It — Remake (2025)</strong> is a modern reimagining
+            of my 2020 GMTK Game Jam entry <em>Disarm It</em>, a high-pressure
+            driving game built around dynamically changing rules. While the core
+            premise remains the same—obey procedural rules to prevent an onboard
+            bomb from detonating—this remake serves as a showcase of how I’ve
+            evolved as a gameplay programmer over the last five years.
+          </p>
+          <p>
+            The remake replaces the original obstacles with reactive{' '}
+            <strong>laser hazards</strong> that dynamically spawn and animate
+            around the player. The car now features a{' '}
+            <strong>three-heart health system</strong>, adding layers of
+            survivability and tension. Every system—from procedural terrain to
+            real-time rule evaluation—has been rebuilt with professional-grade
+            architecture and optimization in mind.
+          </p>
+          <ul className='portfolio-list'>
+            <li>
+              <strong>Procedural Terrain Generation:</strong> Implemented a
+              custom chunk-based generation system inspired by the Wave Function
+              Collapse algorithm. Perlin noise defines step-like floor heights,
+              while automatic ramp creation ensures continuous traversal.
+            </li>
+            <li>
+              <strong>Dynamic Chunk Loading:</strong> Loaded only visible chunks
+              within a distance cube around the player to reduce render and
+              compute overhead.
+            </li>
+            <li>
+              <strong>Laser Hazard System:</strong> Lasers spawn around the
+              player using Poisson disk sampling, with spawn radius tightening
+              over time. Each laser features custom VFX and animated
+              sinusoidal/circular movement.
+            </li>
+            <li>
+              <strong>Hexagonal Arena Shader:</strong> Designed a pulsating
+              sci-fi arena enclosure with inward-facing hex patterns and
+              emissive electrical effects.
+            </li>
+            <li>
+              <strong>Robust Gameplay Architecture:</strong> Built a modular
+              state-based system managing play, pause, and game-over states
+              through interfaces and delegates. ScriptableObjects define
+              gameplay data for cars, lasers, and rules.
+            </li>
+            <li>
+              <strong>Rule Engine 2.0:</strong> Refactored rule logic using
+              interfaces, reflection, and templates—allowing rules to be
+              generated, evaluated, and applied seamlessly during runtime.
+            </li>
+          </ul>
+          <p>
+            The alpha build focuses on core systems and gameplay. Upcoming
+            updates will expand UI/UX polish, introduce leaderboards, car and
+            arena customization, and enhance overall game feel.
+          </p>
+        </div>
+      </>
+    ),
+    stack: ['Unity', 'C#', 'Figma', 'Gimp', 'Blender'],
+    livePreview: 'https://drive.google.com/drive/folders/1an47AKY5LKtGUd7W_cySWFQ1HeeIy-rT?usp=drive_link',
+  },
+  {
     name: 'Dungeon Man (2024)',
     content: (
       <div className='iframe-container'>
-        <img
+        <iframe
           alt='Dungeon Man'
           max-height='1200px'
           height='100%'
-          src={DungeonManImg}
+          src="https://www.youtube.com/embed/zz3xNGY9nqQ?si=x8MPhKWcI1d3m72W"
           title='Disarm It Img'
-          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerpolicy='strict-origin-when-cross-origin'
           allowFullScreen
@@ -58,7 +147,7 @@ const games = [
             spectral entities patrol the manor. One type of ghost actively hunts
             Jack, while the other guards electric cells used to recharge the
             dying torch. Players rely on reflexes, resource management, and a
-            directional radar system to survive each increasingly dark level.
+            directional radar system to survive the increasingly dark dungeon.
           </p>
           <p>
             I took on both technical and leadership responsibilities in this
@@ -147,11 +236,11 @@ const games = [
     name: 'Disarm It (2020)',
     content: (
       <div className='iframe-container'>
-        <img
+        <iframe
           alt='Disarm It'
           max-height='1200px'
           height='100%'
-          src={DisarmItImg}
+          src="https://www.youtube.com/embed/CIfwRzxh3Zk?si=hEICvnPbaFrfZnaw"
           title='Disarm It Img'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -263,7 +352,7 @@ const projects = [
         <iframe
           max-height='1200px'
           height='100%'
-          src={FabrikGif}
+          src="https://www.youtube.com/embed/H5FQQEyNWHE?si=2rN4ZL2wjPotPCZo"
           title='IK Solver Gif'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -391,12 +480,7 @@ const projects = [
       },
       {
         type: 'iframe',
-        src: 'https://www.shadertoy.com/embed/lXK3D3?gui=true&t=10&paused=true&muted=false',
-        title: 'Scales Of Randomness',
-      },
-      {
-        type: 'iframe',
-        src: 'https://www.shadertoy.com/embed/t32SDW?gui=true&t=10&paused=true&muted=false',
+        src: 'https://www.youtube.com/embed/aGJczuIXZHs?si=8XsHAVm49pacAshj',
         title: 'Shooting Stars',
       },
     ],
@@ -422,10 +506,6 @@ const projects = [
             Graph, simulates growth behavior along arbitrary paths.
           </li>
           <li>
-            <strong>Scales of Randomness</strong> – A surprising pattern that
-            emerged from UV manipulations and fract logic, posted on Shadertoy.
-          </li>
-          <li>
             <strong>Shooting Stars</strong> – A mesmerizing particle flow
             representing stars in a perpetual fall, one of my most polished
             Shadertoy pieces.
@@ -445,7 +525,7 @@ const projects = [
       },
       {
         type: 'iframe',
-        src: 'https://www.shadertoy.com/embed/clGBWR?gui=true&paused=true&muted=false',
+        src: 'https://www.youtube.com/embed/ArgED_jIqyE?si=tzJ_ZN0QP0ZhXIlC',
         title: 'Scales Of Randomness',
       },
     ],
