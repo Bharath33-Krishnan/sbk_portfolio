@@ -116,7 +116,7 @@ const games = [
         </div>
       </>
     ),
-    stack: ['Unity', 'C#', 'Figma', 'Gimp', 'Blender'],
+    stack: ['Unity', 'C#', 'Figma', 'GIMP', 'Blender'],
     livePreview: 'https://drive.google.com/drive/folders/1an47AKY5LKtGUd7W_cySWFQ1HeeIy-rT?usp=drive_link',
   },
   {
