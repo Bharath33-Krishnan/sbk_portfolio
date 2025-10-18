@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme'
-import { projects,games } from './portfolio'
+import { projects,games,showcase} from './portfolio'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
@@ -19,6 +19,7 @@ const App = () => {
 
       <main>
         <About />
+        <Projects id='showcase' projects={showcase} name='Showcase Reel' />
         <Projects id='games' projects={games} name='Video Games' />
         <Projects id='projects' projects={projects} name='Projects' />
         <Skills />

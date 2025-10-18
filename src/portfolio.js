@@ -27,6 +27,24 @@ const about = {
   },
 }
 
+const showcase = [
+  {
+    content: (
+      <div className='iframe-container'>
+        <iframe
+          alt='Showcase Reel'
+          max-height='1200px'
+          height='100%'
+          src='https://www.youtube.com/embed/FSiBuQWnlcw?si=V0hHUe_JChNSd4R_'
+          title='Showcase Reel'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerpolicy='strict-origin-when-cross-origin'
+          allowFullScreen
+        />
+      </div>
+    )
+  }
+]
 
 const games = [
   {
@@ -128,7 +146,7 @@ const games = [
           max-height='1200px'
           height='100%'
           src="https://www.youtube.com/embed/zz3xNGY9nqQ?si=x8MPhKWcI1d3m72W"
-          title='Disarm It Img'
+          title='Dungeon Man'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerpolicy='strict-origin-when-cross-origin'
           allowFullScreen
@@ -187,7 +205,6 @@ const games = [
           height='100%'
           src='https://www.youtube.com/embed/QuP8OgCKnaM?si=ygK62cTdX9dZ3N9F'
           title='Funky Blueprints YouTube video player'
-          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerpolicy='strict-origin-when-cross-origin'
           allowFullScreen
@@ -242,7 +259,6 @@ const games = [
           height='100%'
           src="https://www.youtube.com/embed/CIfwRzxh3Zk?si=hEICvnPbaFrfZnaw"
           title='Disarm It Img'
-          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerpolicy='strict-origin-when-cross-origin'
           allowFullScreen
@@ -287,7 +303,6 @@ const games = [
           height='100%'
           src='https://www.youtube.com/embed/j0TNKrEShGs?si=6SBqW36uhfpPeb_Y'
           title='Duel YouTube video player'
-          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerpolicy='strict-origin-when-cross-origin'
           allowFullScreen
@@ -353,8 +368,7 @@ const projects = [
           max-height='1200px'
           height='100%'
           src="https://www.youtube.com/embed/H5FQQEyNWHE?si=2rN4ZL2wjPotPCZo"
-          title='IK Solver Gif'
-          frameBorder='0'
+          title='IK Solver Video'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerpolicy='strict-origin-when-cross-origin'
           allowFullScreen
@@ -597,4 +611,4 @@ const contact = {
   email: 'bharathkrishnan33@gmail.com',
 }
 
-export { header, about, games,projects, skills, contact }
+export { header, about, showcase, games,projects, skills, contact }
