@@ -3,6 +3,7 @@ import RaylibEngineImg2 from './assets/FragEngineLighting.png'
 import DIT_R1 from './assets/DIT_R1.png'
 import DIT_R2 from './assets/DIT_R2.png'
 import DIT_R3 from './assets/DIT_R3.png'
+import PROCTREE from './assets/ProceduralTrees.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -16,7 +17,7 @@ const about = {
   role: 'Game Developer & Graphics Programmer',
   description:(
     <>
-      I am a passionate Computer Science engineer with over 7 years of experience specializing in <strong>game development</strong> and <strong>graphics programming</strong>. Skilled in <strong>Unity (C#)</strong>, <strong>shader programming</strong>, <strong>procedural generation</strong>, and <strong>2D/3D game engine development</strong>, I have built and optimized interactive, visually compelling games and engine components. My expertise includes <strong>real-time rendering</strong>, <strong>lighting models</strong>, <strong>particle systems</strong>, and <strong>performance optimization</strong> using both high-level scripting and low-level graphics techniques in <strong>GLSL</strong> and <strong>modern C++</strong>. I have led game development communities, organized <strong>game jams</strong>, and mentored peers, continuously pushing creative and technical boundaries to deliver polished, scalable, and immersive gaming experiences.
+      I am a Computer Science engineer and game programmer with a <strong>strong passion for creating interactive experiences</strong>. Over the past <strong>7 years</strong>, I have honed my skills in <strong>Unity (C#), shader development, procedural content generation, and gameplay programming</strong>. I enjoy building <strong>modular, scalable game systems</strong> and exploring <strong>graphics and engine development</strong>.
     </>
   ),
   resume: 'https://www.overleaf.com/read/tsrmmbmpgmsf#f058a6',
@@ -94,8 +95,9 @@ const games = [
           <ul className='portfolio-list'>
             <li>
               <strong>Procedural Terrain Generation:</strong> Implemented a
-              custom chunk-based generation system inspired by the Wave Function
-              Collapse algorithm. Perlin noise defines step-like floor heights,
+              custom chunk-based generation system using Perlin-noise-based 
+              heightfield synthesis with rule-based topology refinement. 
+              Perlin noise defines step-like floor heights,
               while automatic ramp creation ensures continuous traversal.
             </li>
             <li>
@@ -361,6 +363,73 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
+    name: 'Procedural Tree Generation System (2024)',
+    content: (
+      <div className='iframe-container'>
+         <img
+          alt='Dungeon Man'
+          max-height='1200px'
+          height='100%'
+          src={PROCTREE}
+          title='Disarm It Img'
+          frameBorder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerpolicy='strict-origin-when-cross-origin'
+          allowFullScreen
+        />
+      </div>
+    ),
+    description: (
+      <>
+        <div className='portfolio-entry' style={{ textAlign: 'left' }}>
+          <p>
+            <strong>Procedural Tree Generation System</strong> is a comprehensive
+            Unity-based research project exploring multiple algorithmic approaches
+            to generating realistic tree structures. The system implements both{' '}
+            <strong>L-Systems</strong> and <strong>Space Colonization</strong>{' '}
+            algorithms, providing a flexible framework for creating diverse,
+            botanically-inspired tree geometries with full control over branching
+            patterns and structural complexity.
+          </p>
+          <p>
+            I designed a <strong>graph-based architecture</strong> to represent
+            tree topology abstractly, separating the algorithmic generation phase
+            from the geometric realization phase. This modular approach enabled
+            experimentation with multiple meshing techniques and allowed for
+            detailed performance benchmarking across different generation and
+            rendering strategies.
+          </p>
+          <ul className='portfolio-list'>
+            <li>
+              <strong>Multiple Generation Algorithms</strong> – implemented
+              L-Systems for rule-based fractal growth and Space Colonization for
+              biologically-inspired branching toward attractors
+            </li>
+            <li>
+              <strong>Graph-Based Topology Modeling</strong> – represented tree
+              structures as abstract node graphs, enabling algorithmic traversal
+              and separation of structure from visual representation
+            </li>
+            <li>
+              <strong>Advanced Geometry Synthesis</strong> – converted topology
+              graphs into renderable meshes using Marching Cubes for organic
+              surfaces, cylinder primitives for performance, and Catmull-Rom
+              spline extrusion for smooth branching
+            </li>
+            <li>
+              <strong>Performance Benchmarking</strong> – systematically compared
+              generation and meshing techniques across visual fidelity,
+              performance metrics, and structural realism to identify optimal
+              trade-offs
+            </li>
+          </ul>
+        </div>
+      </>
+    ),
+    stack: ['Unity', 'C#'],
+    sourceCode: 'https://github.com/Bharath33-Krishnan/Procedural-Tree-Generation',
+  }
+  ,{
     name: 'IK Solver Library(2024)',
     content: (
       <div className='iframe-container'>
